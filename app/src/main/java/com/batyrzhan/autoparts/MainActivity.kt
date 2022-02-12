@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity(), FragmentListener {
             ), binding.drawerLayout
         )
         appBarConfiguration?.let { setupActionBarWithNavController(navController, it) }
-        binding.navigationView.setupWithNavController(navController)
+      //  binding.navigationView.setupWithNavController(navController)
         binding.bottomNavigationMain.setupWithNavController(navController)
         binding.imgCart.setOnClickListener {
             this.findNavController(R.id.nav_host_fragment).navigate(R.id.cartFragment) }
