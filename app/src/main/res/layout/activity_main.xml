@@ -125,7 +125,6 @@
         app:headerLayout="@layout/navigation_header_layout"
         app:itemIconTint="@color/menu_text_color"
         app:itemTextColor="@color/menu_text_color"
-        app:labelVisibilityMode="labeled"
         app:menu="@menu/sidebar" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
