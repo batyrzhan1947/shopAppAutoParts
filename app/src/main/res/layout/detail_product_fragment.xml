@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/productImgDetail"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/placeholder_img"
+                tools:ignore="ContentDescription" />
+
+
+            <TextView
+                android:id="@+id/productNameDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productImgDetail"
+                android:layout_marginVertical="15dp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/priceProductDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productNameDetail"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/favoriteBtnDetail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_above="@id/mediumViewDetail"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/ic_favorite_border"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/mediumViewDetail"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/priceProductDetail"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/detailTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mediumViewDetail"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="15dp"
+                android:text="Характеристики"
+                android:textSize="18sp"
+
+                />
+
+            <TextView
+                android:id="@+id/brandTitleTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailTxtView"
+                android:layout_marginVertical="5dp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/oemTitleTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/brandTitleTxtView"
+                android:layout_marginVertical="5dp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/articulTitleTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oemTitleTxtView"
+                android:layout_marginVertical="5dp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/markaTitleTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/articulTitleTxtView"
+
+                android:layout_marginVertical="5dp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/typePrTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/markaTitleTxtView"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <View
+                android:id="@+id/bottomViewDetail"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/typePrTxtView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/descTitleTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bottomViewDetail"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Описание"
+                android:textSize="18sp" />
+
+
+
+           <WebView
+               android:id="@+id/descInpTxtView"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginHorizontal="7dp"
+               android:layout_marginVertical="8dp"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+               android:layout_below="@id/descTitleTxtView"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentStart="true"
+               tools:ignore="WebViewLayout" />
+
+            <RelativeLayout
+                android:id="@+id/elegantBtnAndAddBtnLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descInpTxtView"
+                android:layout_marginHorizontal="7dp"
+                android:layout_marginVertical="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:background="@color/bg_color"
+                android:orientation="horizontal">
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/elegantBtn"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center|center_vertical"
+                    android:visibility="visible"
+                    app:backGroundColor="@color/elegantBtnColor"
+                    app:finalNumber="10"
+                    app:textColor="@color/white"
+                    app:textSize="6sp" />
+
+                <Button
+                    android:id="@+id/cartDetailBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toEndOf="@id/elegantBtn"
+                    android:text="Добавить в корзину"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressDetProdfr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

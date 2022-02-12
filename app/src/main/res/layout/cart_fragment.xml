@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/layoutRecCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/totalPriceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            >
+            <TextView
+                android:id="@+id/titleTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Всего: "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_gravity="start|center_vertical"
+                android:textColor="@color/black"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/allPriceCart"
+                />
+            <TextView
+                android:id="@+id/allPriceCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/titleTotal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="15sp"
+                android:layout_marginHorizontal="5dp"
+                android:textColor="@color/black"
+                android:layout_marginVertical="10dp"
+                />
+
+            <TextView
+                android:id="@+id/clearCartTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Очистить корзину"
+                android:clickable="true"
+                android:focusable="true"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:padding="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                android:layout_marginEnd="15dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/viewBottomCart"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_below="@id/totalPriceLayout"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartRecView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/viewBottomCart"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@id/frameLayout"
+            tools:listitem="@layout/item_cart" />
+
+ <FrameLayout
+     android:id="@+id/frameLayout"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentEnd="true"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentStart="true"
+     android:background="@color/bg_color"
+     >
+     <Button
+         android:id="@+id/continueBtn"
+         android:layout_width="match_parent"
+         android:layout_height="?attr/actionBarSize"
+
+         android:layout_marginVertical="8dp"
+         android:layout_marginHorizontal="15dp"
+
+         android:text="@string/txt_checkout_continue" />
+ </FrameLayout>
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/layoutEmptyHistory"
+        layout="@layout/include_empty_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

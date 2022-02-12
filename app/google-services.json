@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "724879301943",
+    "project_id": "autopartsapp-6e143",
+    "storage_bucket": "autopartsapp-6e143.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724879301943:android:4d84dece47501210e40eb2",
+        "android_client_info": {
+          "package_name": "com.batyrzhan.autoparts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724879301943-fl1s6djifpsgr5ugh714s7na0una68it.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCABc4DUtavpWB7RhD73XC8uJGWFx87OR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724879301943-fl1s6djifpsgr5ugh714s7na0una68it.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

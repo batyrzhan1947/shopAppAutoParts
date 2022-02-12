@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <TextView
+        android:id="@+id/typePayTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Другие способы оплаты"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="18dp"
+        android:textColor="@color/black"
+        android:layout_marginVertical="15dp"
+
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_below="@id/typePayTitle"
+        android:layout_marginVertical="8dp"
+        />
+
+ <RadioGroup
+     android:id="@+id/radioGroup"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/view"
+     android:layout_marginStart="18dp"
+     android:layout_marginTop="10dp"
+     >
+<RadioButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:text="Оплата наличными"
+    android:textSize="18sp"
+    android:layout_marginHorizontal="10dp"
+    />
+     <RadioButton
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="@color/black"
+         android:text="Онлайн банковской картой"
+         android:textSize="18sp"
+         android:layout_marginHorizontal="10dp"
+         />
+     <RadioButton
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="@color/black"
+         android:text="Оплата наличными"
+         android:textSize="18sp"
+         android:layout_marginHorizontal="10dp"
+         />
+
+
+
+
+ </RadioGroup>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

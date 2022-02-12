@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">AutoParts</string>
+    <string name="ascPrice">Сначала дешевые</string>
+    <string name="descPrice">Сначала дорогие</string>
+    <string name="dialog_option_yes">Да</string>
+    <string name="dialog_option_no">Нет</string>
+    <string name="dialog_option_cancel">Отмена</string>
+    <string name="dialog_option_add">Добавить</string>
+    <string name="msg_stock_not_enough">Нет на складе</string>
+    <string name="msg_stock_below_0">количество товара не может быть 0</string>
+    <string name="msg_success_add_cart">Успешно добавлен в корзину</string>
+    <string name="add_comment">Комментарий</string>
+    <string name="confirm_order_text">Подтвердить заказ</string>
+    <string name="checkout_detail">Детали Заказа</string>
+    <string name="txt_shipping">Доставка</string>
+    <string name="txt_adress">Адрес</string>
+    <string name="txt_number_tel">Номер телефона</string>
+    <string name="checkout_your_name">Ваше Имя</string>
+    <string name="checkout_email">Ваш Email</string>
+
+    <string name="pref_title_name">Имя</string>
+    <string name="pref_title_email">Email</string>
+    <string name="pref_title_phone">Номер Телефона</string>
+    <string name="pref_title_address">Адрес</string>
+    <string name="default_your_name">Ваше имя</string>
+    <string name="default_your_email">вашemail@gmail.com</string>
+    <string name="default_your_phone">+784768467846</string>
+    <string name="default_your_address">Ваш Адрес</string>
+    <string name="no_order">Нет заказа!</string>
+
+    <string name="txt_order">Заказ:</string>
+    <string name="txt_tax">Налог:</string>
+    <string name="txt_total">Всего:</string>
+    <string name="checkout_dialog_title">Оформление заказа</string>
+    <string name="checkout_fill_form">Выберите способ доставки!</string>
+    <string name="checkout_dialog_msg">Вы уверены, что хотите оформить заказ?</string>
+    <string name="checkout_submit_title">Пожалуйста подождите</string>
+    <string name="checkout_submit_msg">Отправить заказ&#8230;</string>
+    <string name="checkout_success_title">Поздравляем</string>
+    <string name="checkout_success_msg">Спасибо за заказ! Скоро мы проверим наличие всего заказа и отправим Вам на email счёт для оплаты. Вы можете оплатить удобным для Вас способом.</string>
+    <string name="checkout_option_ok">OK</string>
+    <string name="txt_checkout_continue">Оформить заказ</string>
+
+    <string name="share_app">Привет. Я хочу поделиться с тобой этим прекрасным магазином.</string>
+    <!--privacy policy-->
+    <string name="privacy_policy_url">https://www.freeprivacypolicy.com/</string>
+    <string name="countNotSendTxt">Количество не введено!</string>
+    <string name="shop_autparts_txt">Магазин автозапчастей</string>
+    <string name="select_payment_type">Выберите способ оплаты!</string>
+    <string name="txt_detail_order">Детали заказа:</string>
+    <string name="status_order_txt">Статус заказа:</string>
+    <string name="title_sidebar_main">Главная</string>
+    <string name="title_sidebar_catalog">Каталог</string>
+    <string name="title_sidebar_cart">Корзина</string>
+    <string name="title_sidebar_cabinet">Кабинет</string>
+    <string name="title_sidebar_info">Инфо</string>
+
+    <array name="rangeSliderValues">
+        <item>0</item>
+        <item>50000</item>
+    </array>
+</resources>

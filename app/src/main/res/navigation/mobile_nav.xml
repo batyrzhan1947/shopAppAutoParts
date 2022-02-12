@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.batyrzhan.autoparts.fragments.MainFragment"
+        android:label="Главная"
+        tools:layout="@layout/main_fragment">
+
+        <action
+            android:id="@+id/action_mainFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.batyrzhan.autoparts.fragments.CatalogFragment"
+        android:label="Каталог"
+        tools:layout="@layout/catalog_fragment">
+        <action
+            android:id="@+id/action_catalogFragment_to_productsFragment"
+            app:destination="@id/productsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.batyrzhan.autoparts.fragments.CartFragment"
+        android:label="Корзина"
+        tools:layout="@layout/cart_fragment">
+        <action
+            android:id="@+id/action_cartFragment_to_catalogFragment"
+            app:destination="@id/catalogFragment" />
+        <action
+            android:id="@+id/action_cartFragment_to_checkOutFragment"
+            app:destination="@id/checkOutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.batyrzhan.autoparts.fragments.ProductsFragment"
+        tools:layout="@layout/products_fragment">
+        <action
+            android:id="@+id/action_productsFragment_to_detailProductFragment"
+            app:destination="@id/detailProductFragment" />
+        <action
+            android:id="@+id/action_productsFragment_to_filterFragment"
+            app:destination="@id/filterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailProductFragment"
+        android:name="com.batyrzhan.autoparts.fragments.DetailProductFragment"
+        android:label="Описание товара"
+        tools:layout="@layout/detail_product_fragment">
+        <action
+            android:id="@+id/action_detailProductFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.batyrzhan.autoparts.fragments.InfoFragment"
+        android:label="Помощь"
+        tools:layout="@layout/help_fragment">
+        <action
+            android:id="@+id/action_infoFragment_to_detailHelpFragment"
+            app:destination="@id/detailHelpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailHelpFragment"
+        android:name="com.batyrzhan.autoparts.fragments.DetailHelpFragment"
+        tools:layout="@layout/help_detail_fragment" />
+    <fragment
+        android:id="@+id/checkOutFragment"
+        android:name="com.batyrzhan.autoparts.fragments.CheckOutFragment"
+        android:label="Оформление"
+        tools:layout="@layout/checkout_fragment" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.batyrzhan.autoparts.fragments.ProfileFragment"
+        android:label="Профиль"
+        tools:layout="@layout/profile_fragment">
+        <action
+            android:id="@+id/action_profileFragment_to_editUserFragment"
+            app:destination="@id/editUserFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_historyOrdersFragment"
+            app:destination="@id/historyOrdersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editUserFragment"
+        android:name="com.batyrzhan.autoparts.fragments.EditUserFragment"
+        android:label="Редактирование"
+        tools:layout="@layout/edit_user_fragment">
+        <action
+            android:id="@+id/action_editUserFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyOrdersFragment"
+        android:name="com.batyrzhan.autoparts.fragments.HistoryOrdersFragment"
+        android:label="Мои заказы"
+        tools:layout="@layout/history_order_fragment" />
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.batyrzhan.autoparts.fragments.FilterFragment"
+        android:label="Фильтр"
+        tools:layout="@layout/filter_fragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.batyrzhan.autoparts.fragments.SearchFragment"
+        android:label="Поиск"
+        tools:layout="@layout/search_fragment">
+        <action
+            android:id="@+id/action_searchFragment_to_detailProductFragment"
+            app:destination="@id/detailProductFragment" />
+    </fragment>
+</navigation>

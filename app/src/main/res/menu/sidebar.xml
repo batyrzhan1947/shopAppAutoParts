@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/ic_star"
+        android:title="@string/title_sidebar_main"
+        />
+
+    <item
+        android:id="@+id/catalogFragment"
+        android:icon="@drawable/ic_baseline_folder"
+        android:title="@string/title_sidebar_catalog"
+
+        />
+
+    <item
+        android:id="@+id/cartFragment"
+        android:icon="@drawable/ic_shopping_cart_menu"
+        android:title="@string/title_sidebar_cart" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_account"
+        android:title="@string/title_sidebar_cabinet" />
+    <item
+        android:id="@+id/infoFragment"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="@string/title_sidebar_info" />
+</menu>
