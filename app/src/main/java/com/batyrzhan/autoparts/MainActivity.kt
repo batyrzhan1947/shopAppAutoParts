@@ -17,7 +17,6 @@ import io.reactivex.schedulers.Schedulers
 
 class MainActivity : AppCompatActivity(), FragmentListener {
     private lateinit var binding: ActivityMainBinding
-  //  private var binding: ActivityMainBinding? = null
     private var appBarConfiguration: AppBarConfiguration? = null
     private var cartDAO: CartDAO? = null
     private var disposable: CompositeDisposable? = null
