@@ -14,6 +14,51 @@
       },
       "oauth_client": [
         {
+          "client_id": "724879301943-mpr3pgbs6decu7umtkehitft549t654m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.batyrzhan.autoparts",
+            "certificate_hash": "42786a8dc39a9c89422f50ce1b766a4310926111"
+          }
+        },
+        {
+          "client_id": "724879301943-fl1s6djifpsgr5ugh714s7na0una68it.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCABc4DUtavpWB7RhD73XC8uJGWFx87OR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724879301943-fl1s6djifpsgr5ugh714s7na0una68it.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724879301943:android:cb810ab318db91efe40eb2",
+        "android_client_info": {
+          "package_name": "com.batyrzhan.autoparts_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724879301943-0oickdr11fs58r4db95o958uauqbkes0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.batyrzhan.autoparts_shop",
+            "certificate_hash": "42786a8dc39a9c89422f50ce1b766a4310926111"
+          }
+        },
+        {
           "client_id": "724879301943-fl1s6djifpsgr5ugh714s7na0una68it.apps.googleusercontent.com",
           "client_type": 3
         }
